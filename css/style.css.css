@@ -62,20 +62,6 @@ body {
     display: flex;
     margin-bottom: 57px;
 }
-.postis-mobile {
-    position: relative;
-}
-
-.postis-mobile:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000000;
-    opacity: 0.6;
-}
 
 @media (min-width: 1200px) {
     .header {
@@ -564,15 +550,6 @@ body {
         text-decoration: none;
     }
 }
-.box-mobile {
-    display: flex;
-    flex-wrap: wrap;
-}
-.post-preview {
-    max-width: 100%;
-    display: block;
-    margin: 0;
-}
 
 @media (max-width: 640px) {
     .header {
@@ -585,10 +562,6 @@ body {
         background-color: #000000;
         margin: auto;
         padding-top: 28px;
-    }
-
-    .box-mobile {
-        display: block;
     }
 
     .header::after {
@@ -625,25 +598,6 @@ body {
         padding-top: 222px;
     }
 
-    .post-content {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 1em;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 2;
-    }
-
-    .post-content:after {
-        content: "";
-        border: 2px solid black;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        z-index: 6;
-    }
-
     ul {
         padding-inline-start: 0;
     }
@@ -677,6 +631,12 @@ body {
         color: #ffffff;
         width: 46%;
     }
+    .goods {
+        display: block;
+    }
+    .card-img {
+        display: block;
+    }
 }
 
 .post-mobile {
@@ -698,6 +658,11 @@ body {
     background-color: #e1d9bd;
     display: block;
     margin: auto;
+}
+
+.card-img {
+    max-width: 100%;
+    width: 24%;
 }
 
 
