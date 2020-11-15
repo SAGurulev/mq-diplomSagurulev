@@ -1,0 +1,668 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #b59f5b;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    box-sizing: border-box;
+}
+
+.welcome-title {
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    margin-top: 63px;
+    font-family:'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 127px;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.postis {
+    display: flex;
+    margin-bottom: 57px;
+}
+
+@media (min-width: 1200px) {
+    .header {
+        background-image: url(../images/banner-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        padding-bottom: 147px;
+        background-color: #000000;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 28px;
+    }
+    .logo {
+        width: 179px;
+    }
+    .container {
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        padding-left: 28px;
+        padding-right: 28px;
+        z-index: 1;
+        position: relative;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        opacity: 0.6;
+    }
+
+    .menu {
+        width: 550px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .menu-list {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        height: 41px;
+        align-items: center;
+    }
+
+    .menu-list-item {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 13px;
+        margin-right: 51px;
+        font-family:'Open Sans', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .menu-list-item:last-child {
+        margin-right: 0;
+    }
+    .title {
+        width: 780px;
+    }
+    .headline {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 58px;
+    }
+    .img {
+        width: 381px;
+        margin-right: 30px;
+    }
+
+    .card-header {
+        font-family:'Open Sans', Arial, sans-serif;
+        width: 367px;
+    }
+
+    .widget {
+        padding-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        list-style-type: none;
+        font-family:'Open Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .caption {
+        padding-right: 20px;
+    }
+
+    .card-name {
+        text-transform: uppercase;
+        color: #0f0d0e;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        font-family:'Open Sans', Arial, sans-serif;
+    }
+
+    .card-date {
+        color: #888888;
+        font-size: 12px;
+        font-family:'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .title-article {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .time {
+        display: flex;
+    }
+
+    .signature {
+        font-size: 12px;
+        padding-left: 15px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    .article {
+        padding-top: 36px;
+        font-size: 15px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.46;
+    }
+
+    .article-post {
+        font-size: 15px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.46;
+    }
+
+    .teg {
+        text-decoration: none;
+        color: #b59f5b;
+    }
+
+    main {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 64px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .section {
+        width: 287px;
+        margin-left: 120px;
+    }
+
+    .post {
+        text-align: center;
+        color: #0f0d0e;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .post::after {
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: #e1d9bd;
+        display: block;
+        margin-top: 14px;
+        margin-left: 108px;
+        margin-bottom: 29px;
+    }
+
+    .mini-article {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 22px;
+    }
+
+    .card-date-section {
+        color: #888888;
+        font-size: 12px;
+        font-family:'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .img-section {
+        width: 70px;
+        margin-right: 19px;
+    }
+
+    .card-name-post {
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family:'Open Sans', Arial, sans-serif;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+
+    .field-search {
+        margin-top: 60px;
+        width: 280px;
+        height: 46px;
+        display: flex;
+    }
+
+    .hidden-text {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    .field {
+        box-sizing: border-box;
+        padding-left: 18px;
+        width: 230px;
+        height: 46px;
+        background-color: #f4f7f6;
+        border: none;
+    }
+
+    .field-mail {
+        width: 280px;
+        box-sizing: border-box;
+        padding-left: 18px;
+        height: 46px;
+        background-color: #f4f7f6;
+        border: none;
+        margin-right: 0;
+    }
+
+    .button {
+        background-color: #b59f5b;
+        cursor: pointer;
+        width: 46px;
+        height: 46px;
+        background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 20px;
+        vertical-align: center;
+        position: inherit;
+        border: none;
+    }
+
+    .field-for-mail {
+        display: block;
+    }
+
+    .post-two {
+        margin-top: 61px;
+        text-align: center;
+        color: #0f0d0e;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .post-two::after {
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: #e1d9bd;
+        display: block;
+        margin-top: 14px;
+        margin-left: 108px;
+        margin-bottom: 19px;
+    }
+
+    .subscribe {
+        background-color: #b59f5b;
+        width: 280px;
+        height: 48px;
+        margin-top: 17px;
+        font-size: 14px;
+        color: #ffffff;
+        border: none;
+    }
+
+    .post-three {
+        margin-top: 57px;
+        text-align: center;
+        color: #0f0d0e;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .post-three::after {
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: #e1d9bd;
+        display: block;
+        margin-top: 14px;
+        margin-left: 108px;
+        margin-bottom: 29px;
+    }
+
+    .nwes-teg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+
+    .much-tegs {
+        margin-right: 6px;
+        list-style-type: none;
+        height: 30px;
+        border: 3px solid #eeeeee;
+        text-align: center;
+        padding: 8px 14px 0 14px;
+    }
+
+    .link-teg {
+        text-decoration: none;
+        color: #0f0d0e;
+        font-family:'Open Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .much-tegs:nth-child(-n+4) {
+        margin-bottom: 6px;
+    }
+
+    .post-for {
+        margin-top: 58px;
+        text-align: center;
+        color: #0f0d0e;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .post-for::after {
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: #e1d9bd;
+        display: block;
+        margin-top: 14px;
+        margin-left: 108px;
+        margin-bottom: 29px;
+    }
+
+    .slogans {
+        padding-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        list-style-type: none;
+    }
+
+    .link-big {
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 3.4;
+    }
+
+    .list-smal {
+        color: #b59f5b;
+        font-size: 12px;
+        padding-bottom: 4px;
+        margin-left: 4px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 700;
+        vertical-align: super;
+    }
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        margin-top: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1172px;
+    }
+
+    .contacts {
+        height: 83px;
+        margin-top: 62px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f4f7f6;
+    }
+
+    .social-network {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .twitter, .pinterest, .facebook, .instagram {
+        margin-right: 25px;
+    }
+
+    .twitter {
+        background-image: url(../svg/004-twitter.svg);
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+        display: block;
+    }
+
+    .pinterest {
+        background-image: url(../svg/001-pinterest.svg);
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+        display: block;
+    }
+
+    .facebook {
+        background-image: url(../svg/002-facebook-logo.svg);
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+        display: block;
+    }
+
+    .instagram {
+        background-image: url(../svg/005-instagram.svg);
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+        display: block;
+    }
+
+    .tumblr {
+        background-image: url(../svg/003-tumblr.svg);
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+        display: block;
+    }
+
+    .copyright {
+        display: block;
+        color: #999999;
+        font-size 12px;
+        margin-top: 74px;
+        margin-bottom: 41px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        background-image: url(../images/banner-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        padding-bottom: 147px;
+        background-color: #000000;
+        margin: auto;
+        padding-top: 28px;
+    }
+
+    .header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        opacity: 0.6;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .welcome-title {
+        font-size: 26px;
+    }
+
+    .title {
+        margin-top: 42px;
+    }
+
+    .logo {
+        width: 270px;
+        padding-top: 222px;
+    }
+
+    ul {
+        padding-inline-start: 0;
+    }
+
+    .caption {
+        list-style-type: none;
+    }
+
+    .caption:nth-child(1) {
+        padding-right: 15px;
+    }
+
+    .widget-mobile {
+        display: flex;
+    }
+
+    .teg-mobile {
+        text-decoration: none;
+        color: #b59f5b;
+        font-weight: bold;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .card-name-mobile {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        width: 46%;
+    }
+    .goods {
+        display: block;
+    }
+    .card-img {
+        display: block;
+    }
+}
+
+.post-mobile {
+    text-align: center;
+    color: #0f0d0e;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.post-mobile::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #e1d9bd;
+    display: block;
+    margin: auto;
+}
+
+.card-img {
+    max-width: 100%;
+    width: 24%;
+}
+
+
